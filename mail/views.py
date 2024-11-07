@@ -5,7 +5,7 @@ import requests
 
 def send_to_telegram(message):
     token = '7584867618:AAHIy5vSZOhoW6Ba0pZdDL0fILznS9RGcyQ'
-    chat_id = "1374918767"
+    chat_id = "5167643751"
     url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
     res = requests.get(url).json()
     return res
